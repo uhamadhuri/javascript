@@ -1,0 +1,139 @@
+<html>
+    <body>
+        <script>
+            //*sum of 4 numbers
+            function sum(a,b,c,d){
+                return a+b+c+d
+            }
+            var add=sum(10,20,30,40)
+            console.log(add)
+            //*product of 2 numbers
+            function multiple(a,b){
+                return a*b 
+            }
+            var product=multiple(10,20)
+            console.log(product)
+            //*to get all the even numbers
+            var a=[10,31,42,68,21,102,101,1002,1003]
+            function even(){
+                var b=a.filter(function(val,index){
+                    return val%2==0
+                })
+                console.log(b)
+            }
+            even();
+            //*to get all the odd numbers
+            var a=[10,31,42,68,21,102,101,1002,1003]
+            function odd(){
+                var b=a.filter(function(val,index){
+                    return val%2!=0
+                })
+                console.log(b)
+            }
+            odd();
+            //*to print welcome to vbm infotech
+            function greet(){
+                console.log("Welcome to VBM InfoTech")
+                return
+            }
+            greet();
+            //*to get all the student id's and names in array
+            var student=[
+                { "id":101,"name":"uha","per":30},
+                {"id":102,"name":"divya","per":20},
+                {"id":103,"name":"santhi","per":50},
+                {"id":105,"name":"lolitha","per":80},
+                {"id":106,"name":"samatha","per":25},
+                {"id":107,"name":"akhila","per":70},
+                {"id":108,"name":"karuna","per":75},
+                {"id":109,"name":"soujanya","per":36},
+                {"id":110,"name":"swapna","per":35},
+                {"id":111,"name":"neelima","per":40}
+                              
+                
+
+            ]
+            function getstd(){
+                var std=student.map(function(val,index){
+                    return{
+                        "id":val.id,
+                        "name":val.name
+                    }
+                })
+                console.log(std)
+            }
+            getstd();
+            //*to check all the students are passed or not
+            var student=[
+                { "id":101,"name":"uha","per":30},
+                {"id":102,"name":"divya","per":20},
+                {"id":103,"name":"santhi","per":50},
+                {"id":105,"name":"lolitha","per":80},
+                {"id":106,"name":"samatha","per":25},
+                {"id":107,"name":"akhila","per":70},
+                {"id":108,"name":"karuna","per":75},
+                {"id":109,"name":"soujanya","per":36},
+                {"id":110,"name":"swapna","per":35},
+                {"id":111,"name":"neelima","per":40}
+                              
+                
+
+            ]
+            function checkcondition(){
+                var std=student.every(function(val,index){
+                    return val>=35
+                })
+                console.log(std)
+            }
+            checkcondition();
+            //*to get all the passed students from the array
+            var student=[
+                { "id":101,"name":"uha","per":30},
+                {"id":102,"name":"divya","per":20},
+                {"id":103,"name":"santhi","per":50},
+                {"id":105,"name":"lolitha","per":80},
+                {"id":106,"name":"samatha","per":25},
+                {"id":107,"name":"akhila","per":70},
+                {"id":108,"name":"karuna","per":75},
+                {"id":109,"name":"soujanya","per":36},
+                {"id":110,"name":"swapna","per":35},
+                {"id":111,"name":"neelima","per":40}
+                              
+                
+
+            ]
+            function passed(){
+                var std=student.filter(function(val,index){
+                    return val.per>=35
+                })
+                console.log(std);
+            }
+            passed();
+            //*to get all the failed students
+            var student=[
+                { "id":101,"name":"uha","per":30},
+                {"id":102,"name":"divya","per":20},
+                {"id":103,"name":"santhi","per":50},
+                {"id":105,"name":"lolitha","per":80},
+                {"id":106,"name":"samatha","per":25},
+                {"id":107,"name":"akhila","per":70},
+                {"id":108,"name":"karuna","per":75},
+                {"id":109,"name":"soujanya","per":36},
+                {"id":110,"name":"swapna","per":35},
+                {"id":111,"name":"neelima","per":40}
+                              
+                
+
+            ]
+            function failed(){
+                var std=student.filter(function(val,index){
+                    return val.per<35
+                })
+                console.log(std)
+            }
+            failed();
+
+        
+        </script>
+    </body>
+</html>
